@@ -1,0 +1,23 @@
+{
+  "name": "js-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assertion-library.js",
+  "dependencies": {
+    "jest": "^24.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmagit/js-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webmagit/js-test/issues"
+  },
+  "homepage": "https://github.com/webmagit/js-test#readme"
+}
