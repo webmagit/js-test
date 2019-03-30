@@ -1,28 +1,37 @@
-const { sum, diff } = require('./math')
+const { sum, diff, sumAsync, diffAsync } = require('./math')
 
-function sumTest() {
+test('Addition', () => {
 
     let result = sum(1, 4)
     expect(result).toBe(5)
 
-}
+})
 
-function diffTest() {
+test('Subtraction', () => {
 
     let result = diff(4, 1)
     expect(result).toBe(3)
 
-}
+})
 
-test('Addition', sumTest)
-test('Subtraction', diffTest)
+test('Addition Async', async () => {
 
-function test(title, callback) {
+    let result = await sumAsync(1, 4)
+    expect(result).toBe(5)
+})
+
+test('Subtraction Async', async () => {
+
+    let result = await diffAsync(4, 1)
+    expect(result).toBe(3)
+})
+
+async function test(title, callback) {
     try {
-        callback()
+        await callback()
         console.log(`Pass - ${title}`)
     } catch(error) {
-        throw new Error(`Failed ${title}`)
+        console.error(`Failed ${title}`)
     }
 }
 
