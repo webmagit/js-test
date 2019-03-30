@@ -1,5 +1,4 @@
 const { sum, diff, sumAsync, diffAsync } = require('./math')
-// const { test, expect } = require('./setup-globals')
 
 test('Addition', () => {
 
