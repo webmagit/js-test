@@ -7,10 +7,13 @@
     "jest": "^24.5.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0"
+    "eslint": "^5.16.0",
+    "prettier": "^1.16.4"
   },
   "scripts": {
-    "test": "npx jest test/jest.test.js"
+    "test": "npx jest test/jest.test.js",
+    "lint": "npx eslint test",
+    "format": "prettier --write \"**/*.+(js|jsx)\""
   },
   "repository": {
     "type": "git",
