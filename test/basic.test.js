@@ -1,4 +1,5 @@
-const { sum, diff, sumAsync, diffAsync } = require('./math')
+const { sum, diff, sumAsync, diffAsync } = require('../lib/math')
+const { test, expect } = require('../lib/setup-globals')
 
 test('Addition', () => {
 
