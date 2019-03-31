@@ -6,9 +6,11 @@
   "dependencies": {
     "jest": "^24.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest test/jest.test.js"
   },
   "repository": {
     "type": "git",
