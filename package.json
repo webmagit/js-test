@@ -14,7 +14,9 @@
   "scripts": {
     "test": "npx jest test/jest.test.js",
     "lint": "npx eslint test",
-    "format": "prettier --write \"**/*.+(js|jsx)\""
+    "prettier": "prettier \"**/*.+(js|jsx)\"",
+    "format": "npm run prettier -- --write",
+    "validate": "npm run lint && npm run prettier -- --list-different"
   },
   "repository": {
     "type": "git",
