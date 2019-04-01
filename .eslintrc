@@ -1,0 +1,17 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "extends": [
+        "eslint:recommended",
+        "eslint-config-prettier"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-undef": "warn"
+    },
+    "env": {
+        "browser": true
+    }
+
+}
