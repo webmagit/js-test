@@ -17,8 +17,6 @@ references:
 ########################
 
 defaults: &defaults
-  docker:
-    - image: airtasker/circleci_node:8-browsers
   working_directory: *repository_root
 
 ########################
